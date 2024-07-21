@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../i2c_start_stop.srcs/sources_1/new/i2c_start_stop.v" \
+"../../../../i2c_start_stop.srcs/sources_1/new/i2c_serial2parallel.v" \
+"../../../../i2c_start_stop.srcs/sources_1/new/readwrite_acknack.v" \
+"../../../../i2c_start_stop.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
